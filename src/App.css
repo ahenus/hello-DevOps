@@ -39,7 +39,7 @@
 
 body {
   margin: 0;
-  background-color: #afadad;
+  background-color: #818181;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,4 +50,11 @@ body {
 h1 {
   font-size: 60px;
   color: #1b1b1b;
+}
+
+p {
+  font-family: "Avenir Next LT Pro", sans-serif;
+  text-align: center;
+  font-size: 24px;     /* ha szeretnéd nagyobbra */
+  margin-top: 10px;    /* kis távolság a h1 alatt */
 }
