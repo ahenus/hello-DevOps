@@ -1,0 +1,31 @@
+# Hello DevOps – egyszerű React alkalmazás
+# DevOps beadandó feladat by Henrietta Vaska (O4YCQE)
+
+# Előfeltételek
+Az alkalmazás futtatásához és buildeléséhez szükséges:
+- Node.js (ajánlott: 18+ vagy 20+ verzió), ami a nodejs.org/en/download oldalról elérhető
+- npm (a Node.js telepítéssel együtt érkezik)
+
+Verziók ellenőrzése:
+node -v
+npm -v
+
+# Projektindítás
+Klónozd vagy másold a projektet a gépedre, majd navigálj a projekt mappájába. Nyisd meg PowerShellben, majd nyomj egy
+npm install
+parancsot. Ezután indítsd el a fejlesztői szervert az
+npm start
+parancs leütésével. Ezután az app elérhető lesz a http://localhost:3000 címen a böngésződben.
+
+# Buildelés
+A buildeléshez egy PowerShell indítása ajánlott úgy, hogy közben a projekted mappájában állsz. A terminálba írd be:
+npm run build
+Így létrejött a build mappád, mely tartalmazza a konténerizálható fájlokat (HTML, CSS, JavaScript).
+
+# Dockerizálás
+A docker image létrehozásához a gyökérkönyvtárban állva a terminálba a következő parancsot írjuk:
+docker build -t devops-beadando:v1 .
+Majd a futtatás a következő paranccsal történik:
+docker run -p 8080:3000 devops-beadando:v1
+Ez a parancs a konténerben futó React alkalmazás 3000-es portját a host gép 8080-as portjára irányítja át, így az app elérhető lesz a böngészőben itt:
+http://localhost:8080
