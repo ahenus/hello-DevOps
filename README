@@ -29,3 +29,6 @@ Majd a futtatás a következő paranccsal történik:
 docker run -p 8080:3000 devops-beadando:v1
 Ez a parancs a konténerben futó React alkalmazás 3000-es portját a host gép 8080-as portjára irányítja át, így az app elérhető lesz a böngészőben itt:
 http://localhost:8080
+
+#Dev containerben futtatás
+Először klónozd a repót és nyisd meg VS Code-ban, majd telepítsd a Dev Containers extensiont (MS). VS Code bal alsó sarkában kattints a >< ikonra és válaszd a 'Reopen in Container' opciót. Némi várakozás után a terminálban használd először az 'npm install', majd 'npm start' parancsokat.
